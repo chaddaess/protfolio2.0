@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
+
+.header{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.label{
+    display: flex;
+    flex-direction: row;
+    margin-right: 70rem;
+    align-items: center;
+
+
+}
+.bash{
+    width:2.5rem ;
+    height:2.5rem;
+}
+.name{
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-weight:bolder;
+    font-size: 1.5em;
+    margin-left: 1rem;
+}
+.blinkit{
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0% {
+        fill: #000;
+    }
+    49% {
+        fill: #000;
+    }
+    60% {
+        fill: transparent;
+    }
+    99% {
+        fill: transparent;
+    }
+    100% {
+        fill: #000;
+    }
+}
+
+.contact-button{
+    color: white;
+    border: 1px white solid;
+    border-radius: 12px;
+    background-color: transparent;
+    display: block;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    font-size: 1em;
+}
+.contact-button:hover{
+    background-color: #f0f8ff;
+    color: #1a1a1a;
+    border: 1px white solid;
+
+}
