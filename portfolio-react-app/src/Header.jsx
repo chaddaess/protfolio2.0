@@ -15,9 +15,11 @@ export default function Header(){
                 </svg>
                 <p className="name">CHADHA</p>
             </div>
+            <div className="button-container">
             <button className="contact-button">
                 Contact
             </button>
+            </div>
         </div>
     )
 }

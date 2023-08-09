@@ -1,59 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source Sans Pro');
 
+
+.homepage-container{
+    width: 90%;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+}
 h1 {
     margin-top: 20rem;
     color: white;
 }
-.dots-background{
-    height: 15rem;
-    margin-right: 5rem;
-    position: relative;
-    margin-top: 10rem;
-}
-.computer{
-    height:40rem;
-    width: 35rem;
-    z-index: 4;
-    margin-top: -2.2rem;
-    margin-left: 5rem;
-    position: absolute;
-
-}
 .hero{
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    margin-left: 1em;
 }
 .picture--decor{
-margin-left: 6rem;
+    height: 50%;
+    margin-bottom: 3.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.dots-background{
+    position: relative;
+}
+
+.computer{
+    width: 75%;
+    max-width:290px;
+    z-index: 4;
+    margin-left: 3em;
+    position: absolute;
+    margin-top: -1.5em;
+
+}
+
+
 .description{
-    margin-top: 5rem;
     color: white;
-    margin-left: 10rem;
+    margin-top: 0.5em;
 }
 .Iam{
-    width: 35rem;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size:3em;
+    font-size:2em;
     text-align: left;
     font-weight: bold;
     letter-spacing: 1px;
+    margin:0;
 }
 .words{
-    margin-right: 4rem;
-    width: 25rem;
+    margin-right: 4em;
+    width: 25em;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size:1.8em;
+    font-size:1em;
     text-align: left;
     color: #9C27B0;
+    margin-top:0;
 
 }
 .more{
     text-align: left;
-    width: 30rem;
-    font-size: 1.4em;
+    font-size:1em;
     font-family: "Source Sans Pro",sans-serif;
 }
 
+
+@media (min-width: 550px) {
+    .homepage-container{
+        font-size:1.2em;
+    }
+    .words{
+        margin-top: 1em;
+    }
+}
+
+@media(min-width: 770px){
+    .hero{
+        flex-direction: row;
+        margin-top: 7em;
+        font-size: 1.1em;
+    }
+    .picture--decor{
+        order: 2;
+        width: 50%;
+    }
+    .description{
+        order: 1;
+        width: 50%;
+    }
+    .dots-background{
+        margin-left:60em;
+    }
+    .computer{
+        width:60%;
+        max-width: 450px;
+        margin-left: 9em;
+        margin-top: -5em;
+    }
+}

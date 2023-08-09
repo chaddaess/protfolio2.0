@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@800&display=swap');
 @import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 
+/*default styles:mobile display*/
 .header{
-    height: 5rem;
+    padding-top: 2em;
+    padding-left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    justify-content: space-around;
+    width: 95%;
 }
 .label{
     display: flex;
     flex-direction: row;
-    margin-right: 70rem;
     align-items: center;
-
-
+    width: 50%;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 .bash{
-    width:2.5rem ;
-    height:2.5rem;
+    min-width:2em ;
+    max-width: 2em;
 }
 .name{
     color: white;
@@ -26,7 +29,7 @@
     letter-spacing: 5px;
     font-weight:bolder;
     font-size: 1.5em;
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 .blinkit{
     animation: blink 1s infinite;
@@ -56,9 +59,8 @@
     border-radius: 12px;
     background-color: transparent;
     display: block;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    height: 3rem;
+    height: 3em;
+    padding:0 2em;
     cursor: pointer;
     transition: all .3s ease-in-out;
     font-size: 1em;
@@ -67,5 +69,18 @@
     background-color: #f0f8ff;
     color: #1a1a1a;
     border: 1px white solid;
+
+}
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+    width:50%;
+}
+/*start of desktop display*/
+@media screen and (min-width: 767px) {
+
+    .header{
+        padding-left: 1em;
+    }
 
 }

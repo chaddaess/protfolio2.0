@@ -13,11 +13,17 @@ export default function HomePage(){
     return(
         <div className="homepage-container">
             <div className="hero">
+                <div className="picture--decor">
+                    <img className="computer" src={Computer}/>
+                    <img className="dots-background" src={sideDotsPicture}/>
+                </div>
                 <div className="description">
+                    <div>
                     <h2 className="Iam">My name is Chadha Essid I am a </h2>
                     <div className="words">
                         {text}
                         <Cursor/>
+                    </div>
                     </div>
 
                     <p className="more">
@@ -25,10 +31,7 @@ export default function HomePage(){
                         I love building websites that offer a fun user experience and a robust backoffice.
                     </p>
                 </div>
-                <div className="picture--decor">
-                    <img className="computer" src={Computer}/>
-                    <img className="dots-background" src={sideDotsPicture}/>
-                </div>
+
 
 
             </div>
