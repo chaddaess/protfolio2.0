@@ -2,6 +2,7 @@ import React from "react";
 import Fullpage, {FullpageSection, FullPageSections, FullpageNavigation, FullpageNumber} from "@ap.cx/react-fullpage";
 import Header from "./Header.jsx";
 import HomePage from "./HomePage.jsx";
+import SkillsPage from "./SkillsPage.jsx";
 import './assets/css/homepage.css'
 
 export default function FullPageScroll(){
@@ -16,7 +17,7 @@ export default function FullPageScroll(){
                </FullpageSection>
                <FullpageSection style={pageSyles}>
                    <Header/>
-                   <h1>Hi 2nd</h1>
+                   <SkillsPage/>
                </FullpageSection>
                <FullpageSection style={pageSyles}>
                    <Header/>

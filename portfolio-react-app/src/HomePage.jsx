@@ -12,7 +12,7 @@ export default function HomePage(){
     });
     return(
         <div className="homepage-container">
-            <div className="hero">
+            <div  className="hero">
                 <div className="picture--decor">
                     <img className="computer" src={Computer}/>
                     <img className="dots-background" src={sideDotsPicture}/>
