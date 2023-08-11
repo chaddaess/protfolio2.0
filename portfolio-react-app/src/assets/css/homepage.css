@@ -4,12 +4,12 @@
 
 .homepage-container{
     width: 90%;
-    font-size: 1em;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
 }
 h1 {
-    margin-top: 20rem;
+    margin-top: 20em;
     color: white;
 }
 .hero{
@@ -47,7 +47,7 @@ h1 {
 }
 .Iam{
     font-family: 'Source Sans Pro', sans-serif;
-    font-size:2em;
+    font-size:2rem;
     text-align: left;
     font-weight: bold;
     letter-spacing: 1px;
@@ -57,7 +57,7 @@ h1 {
     margin-right: 4em;
     width: 25em;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size:1em;
+    font-size:1rem;
     text-align: left;
     color: #9C27B0;
     margin-top:0;
@@ -65,14 +65,14 @@ h1 {
 }
 .more{
     text-align: left;
-    font-size:1em;
+    font-size:1rem;
     font-family: "Source Sans Pro",sans-serif;
 }
 
 
-@media (min-width: 550px) {
+@media (min-width: 550px) and (max-width: 770px) {
     .homepage-container{
-        font-size:1.2em;
+        font-size:1.2rem;
     }
     .words{
         margin-top: 1em;
@@ -83,7 +83,7 @@ h1 {
     .hero{
         flex-direction: row;
         margin-top: 7em;
-        font-size: 1.1em;
+        justify-content: space-between;
     }
     .picture--decor{
         order: 2;
@@ -101,5 +101,13 @@ h1 {
         max-width: 450px;
         margin-left: 9em;
         margin-top: -5em;
+    }
+
+    .Iam{
+        font-size: 2.5rem;
+    }
+    .more,.words{
+        margin-top: 1.5em;
+        font-size: 1.3rem;
     }
 }

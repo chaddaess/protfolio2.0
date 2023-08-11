@@ -4,13 +4,13 @@
 body{
     margin:0;
     font-family: "Source Sans Pro",sans-serif;
-    font-size: 14px;
 }
-h1{
+.container-small h1{
     margin-top: 0;
     font-size: 2.5rem !important;
 }
 .container-skills{
+    font-size: 14px;
     width: 99%;
     /*border:1px solid white;*/
     height: 100%;
@@ -19,6 +19,8 @@ h1{
 .container-img{
     display: flex;
     justify-content: flex-end;
+    margin-top:-5em;
+    margin-bottom: 5em;
 }
 .bg-bars{
     margin-top: 0;
@@ -27,8 +29,13 @@ h1{
     opacity: 0.5;
     filter: blur(3.5px);
     -webkit-filter: blur(3.5px);
-    margin-left: 5em;
     position: absolute;
+    scale: 1.5;
+    max-width: 300px;
+}
+.container-img.bottom{
+    margin-right: 70em;
+    margin-top: 1em;
 }
 .container-small{
     display: flex;
@@ -38,7 +45,10 @@ h1{
     padding-left: 1em;
     position: relative;
     margin-top: 2em;
+    height: 80%;
+    justify-content: space-between;
 }
+
 
 .description-text{
     margin-top: 0;
@@ -46,10 +56,17 @@ h1{
     font-size: 1.1rem;
     color: white;
 }
+.skills-description{
+    order: 0;
 
+}
+
+.skills-description h1{
+    margin-bottom: 0;
+}
 .skill p {
     color: white;
-    margin-top: 0;
+    margin-top:0;
 
 }
 
@@ -57,11 +74,14 @@ h1{
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    position: relative;
     flex-direction: row;
     /*border: 1px solid blue;*/
     flex-wrap: wrap;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     width: 100%;
+    max-width: 1000px;
+    order: 1;
 }
 
 .skill{
@@ -71,4 +91,66 @@ h1{
 
 .skill-icon{
     width: 3em;
+}
+
+
+@media (max-width: 340px) {
+    .skill-icon{
+        width: 2em;
+    }
+    .skills-description p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 560px) and (max-width: 764px){
+
+    .skills-description p {
+        margin-top: 2em;
+        font-size: 1.1rem;
+    }
+    .skill-icon{
+        width: 3.5em;
+    }
+
+
+}
+
+
+@media (min-width: 765px) {
+    .skills-description{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        width: 100%;
+    }
+    h1{
+        font-size: 1rem !important
+    }
+    .description-text{
+        margin-top: 2.5em;
+        font-size:1.3rem;
+        text-align: center;
+    }
+
+    .skill-icons{
+        margin-top: 1em;
+        width: 90%;
+        justify-content: center;
+    }
+    .skill-icon{
+        width: 5em;
+    }
+    .skill p{
+        font-size: 1.1rem;
+    }
+    .skill{
+        width: auto;
+        margin-right: 4em;
+        margin-top: 2em;
+    }
+
 }
