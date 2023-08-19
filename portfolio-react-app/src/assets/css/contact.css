@@ -1,0 +1,90 @@
+.container-contact h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    font-size: 2rem;
+}
+.container-contact{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid magenta;*/
+    margin:0 auto;
+
+}
+.contact-description{
+    margin-top: 0;
+    color: white;
+    font-size: 1.1rem;
+}
+.contact-description span{
+    color: #efa344;
+}
+
+.avatar{
+    width: 50%;
+    margin-bottom:0;
+    max-width: 230px;
+
+}
+.contact{
+    width:3em;
+    background-color: transparent;
+}
+
+
+/*socials*/
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ul li {
+    list-style: none;
+    margin-right:1em;
+    border-radius: 20px;
+    width:4em;
+    height: 4em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 160%;
+    width: 140%;
+    top: 80%;
+    left: -120%;
+    background: radial-gradient(circle at 5.7% 50%, rgba(218, 132, 247, 0.71) 29.5%, rgba(248, 193, 119, 0.8) 90.5%);
+    transform: rotate(45deg);
+    transition: all .4s ease-in-out;
+}
+
+ul li:hover svg, ul li:focus svg{
+    transition: all .2s linear;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+ul li:hover::before {
+    top: -28%;
+    left: -7%;
+}
+
+@media (min-width: 768px) {
+    .container-contact h3{
+        font-size:2.7rem;
+    }
+    .contact-description{
+        font-size: 1.3rem;
+    }
+
+    
+}
