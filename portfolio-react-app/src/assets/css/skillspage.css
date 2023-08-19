@@ -55,9 +55,11 @@ body{
     z-index:5;
     font-size: 1.1rem;
     color: white;
+
 }
 .skills-description{
     order: 0;
+    /*animation: float 2s ;*/
 
 }
 
@@ -87,6 +89,7 @@ body{
 .skill{
     text-align: center;
     width: 33%;
+    /*animation:flip 1s ease-in-out ;*/
 }
 
 .skill-icon{

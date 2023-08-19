@@ -70,6 +70,8 @@ h1 {
 }
 
 
+
+
 @media (min-width: 550px) and (max-width: 770px) {
     .homepage-container{
         font-size:1.2rem;
@@ -79,7 +81,10 @@ h1 {
     }
 }
 
+
+
 @media(min-width: 770px){
+
     .hero{
         flex-direction: row;
         margin-top: 7em;

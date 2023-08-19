@@ -27,8 +27,9 @@ export default function HomePage(){
                     <img className="dots-background" src={sideDotsPicture}/>
                 </div>
                 <div className="description"
-                     data-aos="zoom-in"
-                     data-aos-duration="1500">
+                     data-aos="fade"
+                     data-aos-duration="1500"
+                >
                     <div>
                     <h2 className="Iam">My name is Chadha Essid I am a </h2>
                     <div className="words">

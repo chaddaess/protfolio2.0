@@ -1,0 +1,251 @@
+/*
+    ===================================
+            First slide styles
+    ===================================
+ */
+
+
+
+.description-first-slide h3{
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+.description-first-slide p {
+    color: white;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.description-first-slide p span{
+    color: #9c27b0;
+}
+
+.container-projects{
+    /*border: 1px solid green;*/
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    padding:0;
+}
+.slick-dots li button:before {
+    color:white !important;
+    font-size: 1rem;
+}
+.car{
+    /*border: 1px solid magenta;*/
+    width: 80%;
+    margin:0;
+}
+
+.slide1-first-column{
+    display:flex !important;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+.first-slide{
+    display: flex;
+    flex-direction: column;
+}
+
+.slick-slide{
+    height: 90vh;
+}
+
+.sphere-large{
+    position: absolute;
+    z-index: -1;
+}
+
+.sphere-medium{
+    z-index: -1;
+    margin:0;
+
+}
+.swipe--svg{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow{
+    transform: rotate(-90deg);
+}
+
+.slick-dots{
+    bottom:5em ;
+}
+
+
+@media (min-width: 750px){
+
+    .description-first-slide h3{
+        font-size: 3rem;
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    .description-first-slide p{
+        font-size: 1.5rem;
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    .swipe--svg.s1{
+        margin-top: 1em;
+        justify-content: center;
+    }
+    .description-first-slide{
+        margin: 0 auto;
+    }
+    .first-slide{
+        margin-top: 8em;
+    }
+}
+/*
+    ===================================
+            Second slide styles
+    ===================================
+ */
+
+
+.project-description h3{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.project-description p{
+    color: white;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.project-description.d3 p{
+    font-size: 0.9rem;
+}
+
+.project-slide{
+    display: flex !important;
+    flex-direction: column;
+}
+.project-description{
+    order: 2;
+    text-align: left;
+}
+.project-image {
+    width: 90%;
+    order: 1;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+ul li:last-child {
+    display: none;
+}
+a{
+    text-decoration: none;
+    fontWeight:550;
+}
+a:hover{
+    color:#9C27B0; !important;
+
+}
+.swiperight p {
+    font-size: 0.7rem;
+    color: #EDA447;
+
+}
+.diamond{
+    display:none!important;
+}
+
+@media (min-width: 750px) {
+
+    .image-desc{
+        display: flex;
+        flex-direction: column;
+    }
+    .diamond{
+        display: block !important;
+    }
+    .diamond.white{
+        width: 6em;
+        margin-top: 5em;
+        margin-bottom:-5em;
+        margin-left:170%;
+    }
+    .diamond.purple{
+        order:3;
+        width:6em;
+    }
+
+    .diamond.orange{
+        width: 4em;
+        height: 3em;
+        scale: 2;
+        transform: rotate(-20deg);
+        margin-bottom: -16em;
+        margin-left: 15em;
+    }
+    #diamond2{
+        display: block !important;
+        margin-top: 5em;
+        margin-bottom: 2em;
+        margin-left:165%;
+        width: 4em;
+        height: 3em;
+        scale: 2;
+        transform: rotate(20deg);
+    }
+    .project-image{
+        order: 2;
+    }
+    .car{
+        width: 100%;
+        padding-left: 0;
+        height: 80%;
+    }
+    .project-slide{
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0.5em;
+
+    }
+    .project-image{
+        height: 90%;
+        width: 90%;
+        margin-top: 8em;
+        max-width: 800px;
+    }
+    .project-description{
+        margin-top: -7em;
+        width: 50%;
+        text-align: left;
+    }
+    .project-description h3{
+        font-size: 3rem;
+    }
+    .project-description p{
+        font-size: 1.2rem;
+    }
+    .project-description.d3 p{
+        font-size: 1.2rem;
+    }
+
+    .swipe--svg{
+        justify-content: left;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+
+
+}
+
+

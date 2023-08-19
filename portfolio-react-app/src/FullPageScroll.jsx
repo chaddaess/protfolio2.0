@@ -3,6 +3,8 @@ import Fullpage, {FullpageSection, FullPageSections, FullpageNavigation, Fullpag
 import Header from "./Header.jsx";
 import HomePage from "./HomePage.jsx";
 import SkillsPage from "./SkillsPage.jsx";
+import Projectpage from "./projectpage.jsx";
+import ContactPage from "./contactPage.jsx";
 import './assets/css/homepage.css'
 
 export default function FullPageScroll(){
@@ -21,7 +23,11 @@ export default function FullPageScroll(){
                </FullpageSection>
                <FullpageSection style={pageSyles}>
                    <Header/>
-                  <h1>Hi 3rd</h1>
+                   <Projectpage/>
+               </FullpageSection>
+               <FullpageSection style={pageSyles}>
+                   <Header/>
+                   <ContactPage/>
                </FullpageSection>
            </FullPageSections>
        </Fullpage>
