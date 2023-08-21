@@ -4,21 +4,15 @@ import {useTypewriter,Cursor} from "react-simple-typewriter";
 import ComputerSVG from "./assets/ComputerSVG.jsx";
 import Computer from '../public/images/computer.png'
 import './assets/css/homepage.css'
-import 'aos/dist/aos.css';
-import AOS from 'aos';
 import "animate.css/animate.min.css";
+import FullPageScroll from "./FullPageScroll.jsx";
+import AOS from 'aos';
 
 export default function HomePage(){
     const [text]=useTypewriter({
         words:['Software Engineering Student.','Beginner Fullstack Developer.','Problem Solver.'],
         loop:{},
     });
-    useEffect(() => {
-        AOS.init({
-            once: false,
-            mirror: true
-        });
-    }, [])
     return(
         <div className="homepage-container">
             <div  className="hero">

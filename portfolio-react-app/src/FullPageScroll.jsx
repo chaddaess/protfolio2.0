@@ -11,7 +11,7 @@ export default function FullPageScroll(){
     const pageSyles={backgroundColor:"#141416"};
     return(
        <Fullpage>
-           <FullpageNavigation itemStyle={{ backgroundColor: "white" }}/>
+           <FullpageNavigation itemStyle={{ backgroundColor: "white",pointerEvents: 'none' }}/>
            <FullPageSections>
                <FullpageSection style={pageSyles}>
                    <Header/>
@@ -26,8 +26,8 @@ export default function FullPageScroll(){
                    <Projectpage/>
                </FullpageSection>
                <FullpageSection style={pageSyles}>
-                   <Header/>
-                   <ContactPage/>
+                       <Header/>
+                       <ContactPage/>
                </FullpageSection>
            </FullPageSections>
        </Fullpage>

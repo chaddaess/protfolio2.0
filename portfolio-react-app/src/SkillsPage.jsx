@@ -1,16 +1,10 @@
 import React, {useEffect} from "react";
 import bgBars from '../public/images/bg-bars.png'
 import 'aos/dist/aos.css';
-import AOS from 'aos';
-import './assets/css/skillspage.css'
+
 
 export default function SkillsPage(){
-    useEffect(() => {
-        AOS.init({
-            once: false,
-            mirror: true
-        });
-    }, [])
+
     return(
         <div  className="container-skills" >
             <div className="container-img">

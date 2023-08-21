@@ -1,7 +1,6 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ReactDOM from "react-dom/client";
 import './assets/css/header.css'
-
 export default function Header(){
     return(
         <div className="header">
@@ -16,9 +15,13 @@ export default function Header(){
                 <p className="name">CHADHA</p>
             </div>
             <div className="button-container">
-            <button className="contact-button">
-                Contact
-            </button>
+
+                    <a href="#bottom">
+                        <button className="contact-button">
+                            Contact
+                        </button>
+                    </a>
+
             </div>
         </div>
     )

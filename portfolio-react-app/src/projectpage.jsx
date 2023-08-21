@@ -72,7 +72,10 @@ export default function ProjectPage() {
                     <div className="first-slide">
                         <img src={sphereSmall} className="sphere-small"/>
                         <div className="slide1-first-column">
-                            <div className="description-first-slide">
+                            <div className="description-first-slide"
+                                 data-aos="fade-right"
+                                 data-aos-duration="2000"
+                            >
                                 <h3>Portfolio & Previous Projects</h3>
                                 <p>
                                     In the course of my first year of my web developing journey

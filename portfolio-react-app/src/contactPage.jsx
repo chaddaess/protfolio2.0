@@ -5,7 +5,11 @@ import Magic from "./magic.jsx";
 export default function ContactPage() {
     return (
         <div className="container-contact">
-            <img className="avatar" src={me}/>
+            <img className="avatar"
+                 src={me}
+                 data-aos="zoom-in"
+                 data-aos-duration="1500"
+            />
             <div>
                 <Magic/>
                 <p className="contact-description">
@@ -34,7 +38,7 @@ export default function ContactPage() {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://github.com/chaddaess">
                                 <svg className="contact" xmlns="http://www.w3.org/2000/svg"
                                      xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffff"
                                      version="1.1" id="Capa_1" viewBox="0 0 578.305 578.305"
@@ -51,7 +55,7 @@ export default function ContactPage() {
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.facebook.com/chadha.essid.1">
                                 <svg  className="contact" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" stroke="#ffffff">
 
                                     <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -67,7 +71,6 @@ export default function ContactPage() {
 
                     </ul>
             </div>
-
 
         </div>
     )
