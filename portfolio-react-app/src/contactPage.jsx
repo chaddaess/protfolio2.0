@@ -2,14 +2,17 @@ import React from "react";
 import './assets/css/contact.css'
 import me from "../public/images/me!.png"
 import Magic from "./magic.jsx";
+import {Zoom } from "react-awesome-reveal";
+
+
 export default function ContactPage() {
     return (
         <div className="container-contact">
-            <img className="avatar"
-                 src={me}
-                 data-aos="zoom-in"
-                 data-aos-duration="1500"
-            />
+            <Zoom className="avatar">
+                    <img className="avatar"
+                         src={me}
+                    />
+            </Zoom>
             <div>
                 <Magic/>
                 <p className="contact-description">

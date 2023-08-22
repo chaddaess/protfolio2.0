@@ -69,7 +69,20 @@ h1 {
     font-family: "Source Sans Pro",sans-serif;
 }
 
+@media (max-width: 372px) {
 
+
+        .description h2{
+            font-size: 1.65rem;
+        }
+        .words{
+            font-size: 1rem !important;
+        }
+        .more{
+            margin-top: 0;
+            font-size: 1rem;
+        }
+}
 
 
 @media (min-width: 450px) and (max-width: 770px) {
@@ -82,8 +95,11 @@ h1 {
         font-size: 2.2rem !important;
     }
 
+    .more{
+        margin-top: 0;
+    }
     .words,.more{
-        font-size:1.2rem !important;
+        font-size:1.1rem !important;
     }
 }
 

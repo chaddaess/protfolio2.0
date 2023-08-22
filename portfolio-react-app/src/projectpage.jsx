@@ -9,10 +9,9 @@ import socialInLaptop from "../public/images/soccialsharemac.png"
 import diamond from "../public/images/white_cube2.png"
 import diamondPurple from"../public/images/diamond-purple.png"
 import diamondOrange from "../public/images/diamond-orange.png"
-import sphereOrange from "../public/images/sphere-orange.png";
 import Slider from "react-slick";
 import "./assets/css/projectpage.css";
-
+import {Slide} from "react-awesome-reveal";
 
 export default function ProjectPage() {
     //slide on scroll horizentally
@@ -46,7 +45,7 @@ export default function ProjectPage() {
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll:1,
-        arrows: false,
+        arrows:false,
         swipe: false,
         className: "carousel",
     };
@@ -72,10 +71,8 @@ export default function ProjectPage() {
                     <div className="first-slide">
                         <img src={sphereSmall} className="sphere-small"/>
                         <div className="slide1-first-column">
-                            <div className="description-first-slide"
-                                 data-aos="fade-right"
-                                 data-aos-duration="2000"
-                            >
+                            <div className="description-first-slide">
+                                <Slide>
                                 <h3>Portfolio & Previous Projects</h3>
                                 <p>
                                     In the course of my first year of my web developing journey
@@ -93,6 +90,7 @@ export default function ProjectPage() {
                                     </svg>
                                     </span>
                                 </p>
+                                </Slide>
                             </div>
                             <img src={sphereLarge} className="sphere-large"/>
                         </div>
@@ -113,32 +111,34 @@ export default function ProjectPage() {
                                 <span style={{fontWeight:"700"}}>Built with</span>:PHP, vanilla Javascript & CSS
                                 <br></br>
                                 <br></br>
-                                <span className="swipe--svg"
-                                      onMouseEnter={()=>handleMouseOver(document.querySelector("#arrowSecond"))}
-                                      onMouseLeave={()=>handleMouseLeave(document.querySelector("#arrowSecond"))}
-                                >
-                                    <span className="swiperight">
-                                        <a href="https://github.com/medhedibenali/web-project" style={{color:"#EDA447"}}>Github repo</a>
+                                <div className="links">
+                                    <span className="swipe--svg"
+                                          onMouseEnter={()=>handleMouseOver(document.querySelector("#arrowSecond"))}
+                                          onMouseLeave={()=>handleMouseLeave(document.querySelector("#arrowSecond"))}
+                                    >
+                                        <span className="swiperight">
+                                            <a href="https://github.com/medhedibenali/web-project" style={{color:"#EDA447"}}>Github repo</a>
+                                        </span>
+                                        <svg className="arrow git"  id="arrowSecond"xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="#EDA447">
+                                            </path>
+                                        </svg>
                                     </span>
-                                    <svg className="arrow git"  id="arrowSecond"xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                        <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="#EDA447">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <br></br>
-                                <span className="swipe--svg"
-                                      onMouseEnter={()=>handleMouseOver(document.querySelector("#arrowThird"))}
-                                      onMouseLeave={()=>handleMouseLeave(document.querySelector("#arrowThird"))}
-                                >
-                                    <span className="swiperight" >
-                                        <a href="https://youtu.be/TKCDEjQjP6k" style={{color:"#9C27B0",fontWeight:"550"}}>Watch a demo</a>
-                                    </span>
-                                    <svg className="arrow demo" id="arrowThird" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                        <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="#9C27B0">
-                                        </path>
-                                    </svg>
+                                    <br></br>
+                                    <span className="swipe--svg"
+                                          onMouseEnter={()=>handleMouseOver(document.querySelector("#arrowThird"))}
+                                          onMouseLeave={()=>handleMouseLeave(document.querySelector("#arrowThird"))}
+                                    >
+                                        <span className="swiperight" >
+                                            <a href="https://youtu.be/TKCDEjQjP6k" style={{color:"#9C27B0",fontWeight:"550"}}>Watch a demo</a>
+                                        </span>
+                                        <svg className="arrow demo" id="arrowThird" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="#9C27B0">
+                                            </path>
+                                        </svg>
 
-                                </span>
+                                    </span>
+                                </div>
                             </p>
                             <img className="diamond orange"
                                  src={diamondOrange}
@@ -165,31 +165,36 @@ export default function ProjectPage() {
                                 <span style={{fontWeight:"700"}}>Built with</span>:Symfony, vanilla Javascript & CSS
                                 <br></br>
                                 <br></br>
-                                <span className="swipe--svg"
-                                      onMouseEnter={()=>handleMouseOver(document.querySelector("#arrowFourth"))}
-                                      onMouseLeave={()=>handleMouseLeave(document.querySelector("#arrowFourth"))}
-                                >
-                                    <span className="swiperight" style={{color:"#EDA447",cursor: "not-allowed"}}>
-                                    Github repo
+                                <div className="links">
+                                    <span className="swipe--svg"
+                                          onMouseEnter={()=>handleMouseOver(document.querySelector("#arrowFourth"))}
+                                          onMouseLeave={()=>handleMouseLeave(document.querySelector("#arrowFourth"))}
+                                    >
+                                        <span className="swiperight" >
+                                            <a href="https://github.com/chaddaess/social_share_hub" style={{color:"#EDA447"}}>
+                                                Github repo
+
+                                            </a>
+                                        </span>
+                                        <svg className="arrow git"  id="arrowFourth"xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="#EDA447">
+                                            </path>
+                                        </svg>
                                     </span>
-                                    <svg className="arrow git"  id="arrowFourth"xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                        <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="#EDA447">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <br></br>
-                                <span className="swipe--svg"
-                                      onMouseEnter={()=>handleMouseOver(document.querySelector("#arrowFifth"))}
-                                      onMouseLeave={()=>handleMouseLeave(document.querySelector("#arrowFifth"))}
-                                >
-                                    <span className="swiperight" >
-                                        <a href="https://youtu.be/V35oEi2EVhQ"style={{color:"#9C27B0",fontWeight:"550"}}>Watch a demo</a>
+                                    <br></br>
+                                    <span className="swipe--svg"
+                                          onMouseEnter={()=>handleMouseOver(document.querySelector("#arrowFifth"))}
+                                          onMouseLeave={()=>handleMouseLeave(document.querySelector("#arrowFifth"))}
+                                    >
+                                        <span className="swiperight" >
+                                            <a href="https://youtu.be/V35oEi2EVhQ"style={{color:"#9C27B0",fontWeight:"550"}}>Watch a demo</a>
+                                        </span>
+                                        <svg className="arrow demo" id="arrowFifth" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="#9C27B0">
+                                            </path>
+                                        </svg>
                                     </span>
-                                    <svg className="arrow demo" id="arrowFifth" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                        <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="#9C27B0">
-                                        </path>
-                                    </svg>
-                                </span>
+                                </div>
                             </p>
 
                         </div>

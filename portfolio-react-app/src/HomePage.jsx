@@ -5,8 +5,8 @@ import ComputerSVG from "./assets/ComputerSVG.jsx";
 import Computer from '../public/images/computer.png'
 import './assets/css/homepage.css'
 import "animate.css/animate.min.css";
-import FullPageScroll from "./FullPageScroll.jsx";
-import AOS from 'aos';
+import {Fade, Slide} from "react-awesome-reveal";
+
 
 export default function HomePage(){
     const [text]=useTypewriter({
@@ -20,26 +20,24 @@ export default function HomePage(){
                     <img className="computer" src={Computer}/>
                     <img className="dots-background" src={sideDotsPicture}/>
                 </div>
-                <div className="description"
-                     data-aos="fade"
-                     data-aos-duration="1500"
-                >
-                    <div>
-                    <h2 className="Iam">My name is Chadha Essid I am a </h2>
-                    <div className="words">
-                        {text}
-                        <Cursor/>
-                    </div>
-                    </div>
+                <div className="description">
+                        <div>
+                            <Slide direction="up" cascade damping={0.6} >
 
-                    <p className="more">
-                        Passionate about web development and computer science in general.
-                        I love building websites that offer a fun user experience and a robust backoffice.
-                    </p>
+                            <h2 className="Iam">My name is Chadha Essid I am a </h2>
+                            <div className="words">
+                                {text}
+                                <Cursor/>
+                            </div>
+                            </Slide>
+                        </div>
+                    <Fade delay={1000}>
+                        <p className="more">
+                            Passionate about web development and computer science in general.
+                            I love building websites that offer a fun user experience and a robust backoffice.
+                        </p>
+                    </Fade>
                 </div>
-
-
-
             </div>
         </div>
     )

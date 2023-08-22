@@ -9,9 +9,10 @@ import './assets/css/homepage.css'
 
 export default function FullPageScroll(){
     const pageSyles={backgroundColor:"#141416"};
+
     return(
        <Fullpage>
-           <FullpageNavigation itemStyle={{ backgroundColor: "white",pointerEvents: 'none' }}/>
+           <FullpageNavigation itemStyle={{ backgroundColor: "white",cursor:"pointer"}}/>
            <FullPageSections>
                <FullpageSection style={pageSyles}>
                    <Header/>
